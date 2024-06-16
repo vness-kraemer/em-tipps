@@ -14,6 +14,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     background-image: url('./background-x.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -69,5 +70,8 @@ body {
 @media (max-width: 635px) {
     .img-game {
      width: 150px;
+    }
+    .col {
+        padding: 20px !important;
     }
  }
