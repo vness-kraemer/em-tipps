@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    background-color: #2B3035 !important;
+    color: white !important;
+}
+
+.content-container {
+    margin: 0;
+    padding: 0;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./background-x.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 500px;
+    color: white;
+}
+
+.title {
+    font-size: 64px;
+}
+
+.paragraph {
+    font-size: 36px;
+}
+
+.heading {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 50px;
+}
+
+.container-md {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.container-right {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.container-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media (max-width: 997px) {
+   .img-game {
+    width: 300px;
+   }
+}
+
+@media (max-width: 635px) {
+    .img-game {
+     width: 150px;
+    }
+ }
