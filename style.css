@@ -1,7 +1,25 @@
+/* Import Fonts  */
+
+@font-face {
+    font-family: Lato-Black;
+    src: url(../assets/font/Lato/Lato-Black.ttf);
+}
+
+@font-face {
+    font-family: Lato-Regular;
+    src: url(../assets/font/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: Righteous-Regular;
+    src: url(../assets/font/Righteous/Righteous-Regular.ttf);
+}
+
 body {
     margin: 0;
     background-color: #2B3035 !important;
     color: white !important;
+    font-family: Lato-Regular !important;
 }
 
 .content-container {
@@ -10,15 +28,17 @@ body {
 }
 
 .hero-section {
+    font-family: Righteous-Regular;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url('./background-x.jpg');
+    background: url('./img/football-germany_1.jpg') rgba(0, 0, 0, 0.5);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
+    background-blend-mode: multiply;
     height: 500px;
     color: white;
 }
@@ -32,6 +52,7 @@ body {
 }
 
 .heading {
+    font-family: Righteous-Regular;
     margin-bottom: 20px;
 }
 
@@ -44,6 +65,142 @@ body {
     flex-direction: row;
     gap: 2em;
 }
+
+/* MENU SECTION  */
+
+.main-menu {
+    background-color: #f4f4f4;
+    padding: 50px;
+}
+
+.main-menu-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Righteous-Regular;
+    color: #2B3035;
+
+}
+
+.menu-p {
+    font-size: 24px;
+}
+
+.main-menu a {
+    color: #2B3035;
+    text-decoration: none;
+}
+
+.main-menu a:hover {
+    color: #646565;
+}
+
+
+/* RULES SECTION  */
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.heading-rules {
+    font-family: Righteous-Regular;
+    color: #2B3035;
+}
+
+.content-rules {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 4em;
+    flex-wrap: wrap;
+    
+}
+
+.content-rules-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2B3035;
+    padding: 20px;
+    max-width: 300px;
+    min-height: 300px;
+}
+
+.p-rules {
+    font-family: Lato-Regular;
+    color: white;
+    text-align: center;
+}
+
+.icons {
+    width: 60px;
+    margin-bottom: 40px;
+}
+
+
+/* MAIN PAGE  */
+
+/* ACHTELFINALE  */
+
+.main-game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background: url('./img/germany-denmark.png') rgba(0, 0, 0, 0.5);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-blend-mode: multiply;
+}
+
+.row-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.img-game {
+    width: 500px;
+}
+
+.col h1 {
+    font-family: Righteous-Regular;
+}
+
+.table {
+    
+    border-radius: 15px !important;
+    border-spacing: 0;
+    border: 2px solid white !important;
+    border-collapse: separate;
+    overflow: hidden;
+    width: 80%;
+}
+
+th, td {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.col-responsive {
+    padding: 100px;
+}
+
+/* ACCORDION  */
 
 .container-right {
     display: flex;
@@ -59,19 +216,73 @@ body {
     align-items: center;
 }
 
+.accordion {
+    font-family: Lato-Regular;
+}
 
+
+
+@media (max-width: 1080px) {
+    .content-rules-container {
+        padding: 10px;
+        min-width: 250px;
+        min-height: 250px;
+    }
+
+    .content-rules {
+        padding: 0;
+        gap: 2em;
+    }
+}
+@media (max-width: 900px) {
+    .content-rules-container {
+        padding: 10px;
+        max-width: 100px;
+        max-height: 100px;
+        font-size: 14px;
+    }
+
+    .icons {
+        width: 40px;
+        margin-bottom: 20px;
+    }
+}
 
 @media (max-width: 997px) {
    .img-game {
-    width: 300px;
+    width: 400px;
    }
 }
 
-@media (max-width: 635px) {
+@media (max-width: 890px) {
     .img-game {
-     width: 150px;
+     width: 200 px;
     }
-    .col {
-        padding: 20px !important;
+    
+    .row-container {
+        flex-direction: column;
+    }
+ }
+@media (max-width: 830px) {
+    .content-rules-container {
+        padding: 10px;
+        max-width: 100px;
+        max-height: 100px;
+        font-size: 14px;
+    }
+ }
+
+ @media (max-width: 530px) {
+    .img-game {
+        width: 200px;
+    }
+
+    .table-responsive {
+        font-size: 14px;
+        font-family: Lato-Regular;
+    }
+
+    .col-responsive {
+        padding: 20px;
     }
  }
