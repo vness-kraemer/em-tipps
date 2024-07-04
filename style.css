@@ -305,4 +305,8 @@ th, td {
     .col-responsive {
         padding: 20px;
     }
+
+    .menu-p {
+        font-size: 12px;
+    }
  }
